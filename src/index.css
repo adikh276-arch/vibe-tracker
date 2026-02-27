@@ -100,6 +100,7 @@
   .vibe-circle {
     @apply w-[88px] h-[88px] rounded-full flex flex-col items-center justify-center cursor-pointer transition-all duration-300 ease-out;
     background: hsl(var(--muted));
+    border: 1.5px solid hsl(var(--primary) / 0.3);
     box-shadow: 0 2px 8px hsl(var(--primary) / 0.1);
   }
 
