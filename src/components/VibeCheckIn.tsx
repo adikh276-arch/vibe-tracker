@@ -34,7 +34,7 @@ const VibeCheckIn = ({ onNext }: Props) => {
       </p>
 
       {/* Vibe Grid */}
-      <div className="grid grid-cols-3 gap-4 justify-items-center max-w-sm mx-auto w-full">
+      <div className="grid grid-cols-2 gap-5 justify-items-center max-w-xs mx-auto w-full">
         {vibes.map((vibe) => (
           <button
             key={vibe.label}
