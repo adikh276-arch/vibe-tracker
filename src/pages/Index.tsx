@@ -1,12 +1,34 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState } from "react";
+import VibeCheckIn from "@/components/VibeCheckIn";
+import Reflection from "@/components/Reflection";
+import Confirmation from "@/components/Confirmation";
+
+type Screen = "checkin" | "reflection" | "confirmation";
 
 const Index = () => {
+  const [screen, setScreen] = useState<Screen>("checkin");
+  const [selectedVibe, setSelectedVibe] = useState("");
+
+  const handleVibeSelected = (vibe: string) => {
+    setSelectedVibe(vibe);
+    setScreen("reflection");
+  };
+
+  const handleReflectionComplete = (reflections: string[]) => {
+    console.log("Vibe:", selectedVibe, "Reflections:", reflections);
+    setScreen("confirmation");
+  };
+
+  const handleDone = () => {
+    setSelectedVibe("");
+    setScreen("checkin");
+  };
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background max-w-md mx-auto">
+      {screen === "checkin" && <VibeCheckIn onNext={handleVibeSelected} />}
+      {screen === "reflection" && <Reflection onComplete={handleReflectionComplete} />}
+      {screen === "confirmation" && <Confirmation onDone={handleDone} />}
     </div>
   );
 };
