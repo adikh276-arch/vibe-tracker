@@ -4,9 +4,10 @@ interface AuthGuardProps {
     children: React.ReactNode;
 }
 
-const NEON_API_KEY = import.meta.env.VITE_NEON_API_KEY;
-const NEON_PROJECT_ID = import.meta.env.VITE_NEON_PROJECT_ID;
-const NEON_BRANCH_ID = import.meta.env.VITE_NEON_BRANCH_ID;
+// Fixed Constants (since they are constant for this project)
+const NEON_API_KEY = import.meta.env.VITE_NEON_API_KEY || "napi_ewlzpqv336e41usn232duvfax8vu1g5g37ozlz8x53eic18pjsyg30vqqorexfav";
+const NEON_PROJECT_ID = "flat-sun-26865495";
+const NEON_BRANCH_ID = "br-empty-glitter-a195t3dz"; // Corrected branch ID matching the endpoint
 const AUTH_API_URL = import.meta.env.VITE_AUTH_API_URL || "https://api.mantracare.com/user/user-info";
 
 export const AuthGuard: React.FC<AuthGuardProps> = ({ children }) => {
@@ -19,8 +20,6 @@ export const AuthGuard: React.FC<AuthGuardProps> = ({ children }) => {
             const token = urlParams.get("token");
             const storedUserId = sessionStorage.getItem("user_id");
 
-            console.log("AuthGuard: Starting handshake. Token in URL:", !!token, "Stored user_id:", storedUserId);
-
             if (storedUserId) {
                 setIsAuthorized(true);
                 setIsLoading(false);
@@ -29,7 +28,6 @@ export const AuthGuard: React.FC<AuthGuardProps> = ({ children }) => {
 
             if (token) {
                 try {
-                    console.log("AuthGuard: Validating token with API...");
                     const response = await fetch(AUTH_API_URL, {
                         method: "POST",
                         headers: {
@@ -43,7 +41,6 @@ export const AuthGuard: React.FC<AuthGuardProps> = ({ children }) => {
                         const userId = data.user_id;
 
                         if (userId) {
-                            console.log("AuthGuard: Validation successful. User ID:", userId);
                             sessionStorage.setItem("user_id", userId.toString());
 
                             // Clean URL
@@ -55,21 +52,18 @@ export const AuthGuard: React.FC<AuthGuardProps> = ({ children }) => {
 
                             setIsAuthorized(true);
                         } else {
-                            console.error("AuthGuard: API returned success but no user_id");
                             window.location.href = "/token";
                         }
                     } else {
-                        console.error("AuthGuard: Token validation failed with status:", response.status);
                         window.location.href = "/token";
                     }
                 } catch (error) {
-                    console.error("AuthGuard: Handshake fetch exception:", error);
+                    console.error("AuthGuard Exception:", error);
                     window.location.href = "/token";
                 } finally {
                     setIsLoading(false);
                 }
             } else {
-                console.warn("AuthGuard: No token and no session. Redirecting to /token");
                 window.location.href = "/token";
             }
         };
@@ -79,7 +73,8 @@ export const AuthGuard: React.FC<AuthGuardProps> = ({ children }) => {
 
     const initializeUser = async (userId: number | string) => {
         try {
-            console.log("AuthGuard: Initializing user in Neon...");
+            // Use the direct SQL API which is more browser-friendly if used with correct database credentials
+            // But since we have the Management API key, we ensure the URL is perfect.
             const sql = `INSERT INTO users (id) VALUES (${userId}) ON CONFLICT (id) DO NOTHING;`;
 
             const response = await fetch(`https://console.neon.tech/api/v1/projects/${NEON_PROJECT_ID}/branches/${NEON_BRANCH_ID}/sql`, {
@@ -94,13 +89,10 @@ export const AuthGuard: React.FC<AuthGuardProps> = ({ children }) => {
             });
 
             if (!response.ok) {
-                const errorText = await response.text();
-                console.warn("AuthGuard: User initialization failed in DB:", errorText);
-            } else {
-                console.log("AuthGuard: User initialization successful");
+                console.warn("AuthGuard: DB init failed", await response.text());
             }
         } catch (error) {
-            console.error("AuthGuard: User initialization exception:", error);
+            console.error("AuthGuard: DB Exception", error);
         }
     };
 
