@@ -38,6 +38,8 @@
     "history": "역사",
     "yourJourney": "당신의 여정",
     "noVibes": "아직 아무런 신호도 기록되지 않았습니다.",
-    "startFirstCheckIn": "여정의 전개를 확인하려면 첫 번째 체크인을 시작하세요."
+    "startFirstCheckIn": "여정의 전개를 확인하려면 첫 번째 체크인을 시작하세요.",
+    "today": "오늘",
+    "yesterday": "어제"
   }
 }

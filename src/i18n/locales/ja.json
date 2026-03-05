@@ -38,6 +38,8 @@
     "history": "歴史",
     "yourJourney": "あなたの旅",
     "noVibes": "まだバイブが記録されていません",
-    "startFirstCheckIn": "最初のチェックインを開始して、ここで旅の展開を確認してください。"
+    "startFirstCheckIn": "最初のチェックインを開始して、ここで旅の展開を確認してください。",
+    "today": "今日",
+    "yesterday": "昨日"
   }
 }

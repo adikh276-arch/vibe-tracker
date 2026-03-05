@@ -38,6 +38,8 @@
     "history": "历史",
     "yourJourney": "你的旅程",
     "noVibes": "尚未记录任何氛围",
-    "startFirstCheckIn": "从这里开始您的首次入住，即可查看您的旅程安排。"
+    "startFirstCheckIn": "从这里开始您的首次入住，即可查看您的旅程安排。",
+    "today": "今天",
+    "yesterday": "昨天"
   }
 }

@@ -38,6 +38,8 @@
     "history": "Tarih",
     "yourJourney": "Yolculuğunuz",
     "noVibes": "Henüz herhangi bir titreşim kaydedilmedi.",
-    "startFirstCheckIn": "Yolculuğunuzun nasıl geliştiğini görmek için ilk girişinizi buradan yapın."
+    "startFirstCheckIn": "Yolculuğunuzun nasıl geliştiğini görmek için ilk girişinizi buradan yapın.",
+    "today": "Bugün",
+    "yesterday": "Dün"
   }
 }

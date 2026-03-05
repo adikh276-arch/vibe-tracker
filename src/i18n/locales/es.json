@@ -38,6 +38,8 @@
     "history": "Historia",
     "yourJourney": "Tu viaje",
     "noVibes": "Aún no se han registrado vibraciones",
-    "startFirstCheckIn": "Comienza tu primer check-in para ver cómo se desarrolla tu viaje aquí."
+    "startFirstCheckIn": "Comienza tu primer check-in para ver cómo se desarrolla tu viaje aquí.",
+    "today": "Hoy",
+    "yesterday": "Ayer"
   }
 }

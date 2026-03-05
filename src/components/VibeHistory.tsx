@@ -115,7 +115,7 @@ const VibeHistory = ({ onBack }: Props) => {
                           {vibeEmojiMap[entry.vibe] || "✨"}
                         </span>
                         <span className="font-heading text-base font-semibold text-foreground">
-                          {t(`vibes.${entry.vibe}`)}
+                          {i18n.exists(`vibes.${entry.vibe}`) ? t(`vibes.${entry.vibe}`) : entry.vibe}
                         </span>
                       </div>
                       <span className="text-xs text-muted-foreground">
