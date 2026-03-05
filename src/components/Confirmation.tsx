@@ -1,10 +1,12 @@
 import { useTranslation } from "react-i18next";
+import { Clock } from "lucide-react";
 
 interface Props {
   onDone: () => void;
+  onHistory: () => void;
 }
 
-const Confirmation = ({ onDone }: Props) => {
+const Confirmation = ({ onDone, onHistory }: Props) => {
   const { t } = useTranslation();
 
   return (
@@ -19,9 +21,24 @@ const Confirmation = ({ onDone }: Props) => {
         {t("thankYou")}
       </p>
 
-      <button className="vibe-button max-w-sm w-full" onClick={onDone}>
-        {t("done")}
-      </button>
+      <div className="max-w-sm w-full space-y-3">
+        <button className="vibe-button w-full" onClick={onDone}>
+          {t("done")}
+        </button>
+
+        <button
+          onClick={onHistory}
+          className="w-full flex items-center justify-center gap-2 py-4 rounded-[28px] text-base font-medium transition-all duration-200 hover:scale-[1.01]"
+          style={{
+            background: "hsl(var(--muted))",
+            color: "hsl(var(--muted-foreground))",
+            border: "1.5px solid hsl(var(--primary) / 0.25)",
+          }}
+        >
+          <Clock className="w-4 h-4" />
+          {t("viewHistory")}
+        </button>
+      </div>
     </div>
   );
 };
