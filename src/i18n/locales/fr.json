@@ -1,0 +1,38 @@
+{
+  "translation": {
+    "vibeTracker": "Suivi des vibrations",
+    "howAreYouFeeling": "Comment vous sentez-vous en ce moment ?",
+    "describeOwnVibe": "Ou décrivez votre propre ambiance",
+    "rightNowIFeel": "En ce moment, je me sens…",
+    "saveVibe": "Save Vibe",
+    "pauseAndReflect": "Pause et réflexion",
+    "typeThoughts": "Saisissez vos idées ici…",
+    "submitReflection": "Soumettre une réflexion",
+    "next": "Suivant",
+    "vibeLogged": "Vibe enregistré",
+    "thankYou": "Merci d&#39;avoir pris le temps de vous arrêter et de le remarquer. Même ce petit geste compte.",
+    "done": "Fait",
+    "vibes": {
+      "Calm": "Calme",
+      "Light": "Lumière",
+      "Driven": "Conduit",
+      "Content": "Contenu",
+      "Steady": "Constant",
+      "Tender": "Tendre",
+      "Heavy": "Lourd",
+      "Thoughtful": "Réfléchi",
+      "Restless": "Agité",
+      "Drained": "Drainé"
+    },
+    "prompts": {
+      "needing": "De quoi auriez-vous besoin en ce moment ?",
+      "happened": "Que s&#39;est-il passé avant que ce sentiment n&#39;apparaisse ?",
+      "speak": "Si cette émotion pouvait parler, que dirait-elle ?",
+      "notice": "Où ressentez-vous cette sensation dans votre corps ?",
+      "sitOrShift": "Est-ce quelque chose que vous souhaitez aborder avec attention ou modifier progressivement ?",
+      "ease": "Qu&#39;est-ce qui vous apporterait ne serait-ce que 10 % de facilité supplémentaire ?",
+      "kindness": "Quel petit geste de bienveillance pourriez-vous vous offrir aujourd&#39;hui ?",
+      "supported": "Qu’est-ce qui vous aiderait à vous sentir soutenu(e) en ce moment ?"
+    }
+  }
+}

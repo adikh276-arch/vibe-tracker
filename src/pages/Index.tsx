@@ -2,6 +2,7 @@ import { useState, useRef } from "react";
 import VibeCheckIn from "@/components/VibeCheckIn";
 import Reflection from "@/components/Reflection";
 import Confirmation from "@/components/Confirmation";
+import LanguageSelector from "@/components/LanguageSelector";
 
 type Screen = "checkin" | "reflection" | "confirmation";
 
@@ -34,11 +35,11 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background max-w-md mx-auto">
+    <div className="min-h-screen bg-background max-w-md mx-auto relative pt-16">
+      <LanguageSelector />
       <div
-        className={`transition-all duration-500 ease-in-out ${
-          transitioning ? "opacity-0 translate-y-4" : "opacity-100 translate-y-0"
-        }`}
+        className={`transition-all duration-500 ease-in-out ${transitioning ? "opacity-0 translate-y-4" : "opacity-100 translate-y-0"
+          }`}
       >
         {screen === "checkin" && <VibeCheckIn onNext={handleVibeSelected} />}
         {screen === "reflection" && <Reflection onComplete={handleReflectionComplete} />}
@@ -49,3 +50,4 @@ const Index = () => {
 };
 
 export default Index;
+

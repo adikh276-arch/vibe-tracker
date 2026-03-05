@@ -1,0 +1,38 @@
+{
+  "translation": {
+    "vibeTracker": "Tagasubaybay ng Vibe",
+    "howAreYouFeeling": "Kumusta ang pakiramdam mo sa sandaling ito?",
+    "describeOwnVibe": "O kaya&#39;y ilarawan ang sarili mong dating",
+    "rightNowIFeel": "Sa ngayon, pakiramdam ko…",
+    "saveVibe": "I-save ang Vibe",
+    "pauseAndReflect": "Huminto at Magnilay-nilay",
+    "typeThoughts": "I-type ang iyong mga saloobin dito…",
+    "submitReflection": "Magsumite ng Repleksyon",
+    "next": "Susunod",
+    "vibeLogged": "Naka-log ang Vibe",
+    "thankYou": "Salamat sa paghinto at pagpansin. Kahit ang maliit na pag-check in na ito ay mahalaga.",
+    "done": "Tapos na",
+    "vibes": {
+      "Calm": "Kalmado",
+      "Light": "Liwanag",
+      "Driven": "Hinimok",
+      "Content": "Nilalaman",
+      "Steady": "Matatag",
+      "Tender": "Malambot",
+      "Heavy": "Mabigat",
+      "Thoughtful": "Maalalahanin",
+      "Restless": "Hindi mapakali",
+      "Drained": "Pinatuyo"
+    },
+    "prompts": {
+      "needing": "Ano kaya ang maaaring kailangan mo ngayon?",
+      "happened": "Ano ang nangyari bago lumitaw ang pakiramdam na ito?",
+      "speak": "Kung makapagsasalita ang emosyong ito, ano ang sasabihin nito?",
+      "notice": "Saan mo napapansin ang ganitong pakiramdam sa iyong katawan?",
+      "sitOrShift": "Ito ba ang gusto mong katabi o gusto mong dahan-dahang igalaw?",
+      "ease": "Ano ang makapagbibigay sa iyo ng kahit 10% pang dagdag na ginhawa?",
+      "kindness": "Anong maliit na kabaitan ang maibibigay mo sa iyong sarili ngayon?",
+      "supported": "Ano ang makakatulong sa iyo na makaramdam ng suporta sa sandaling ito?"
+    }
+  }
+}

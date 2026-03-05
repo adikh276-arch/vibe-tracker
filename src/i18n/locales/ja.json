@@ -1,0 +1,38 @@
+{
+  "translation": {
+    "vibeTracker": "バイブトラッカー",
+    "howAreYouFeeling": "今、どんな気分ですか？",
+    "describeOwnVibe": "あるいはあなた自身の雰囲気を説明してください",
+    "rightNowIFeel": "今、私はこう感じています…",
+    "saveVibe": "バイブを保存",
+    "pauseAndReflect": "立ち止まって考える",
+    "typeThoughts": "ここにあなたの考えを入力してください…",
+    "submitReflection": "反省を提出する",
+    "next": "次",
+    "vibeLogged": "バイブログ",
+    "thankYou": "立ち止まって気づいてくださりありがとうございます。この小さな確認でも大切なのです。",
+    "done": "終わり",
+    "vibes": {
+      "Calm": "落ち着いた",
+      "Light": "ライト",
+      "Driven": "駆り立てられた",
+      "Content": "コンテンツ",
+      "Steady": "安定した",
+      "Tender": "入札",
+      "Heavy": "重い",
+      "Thoughtful": "思慮深い",
+      "Restless": "落ち着かない",
+      "Drained": "排水された"
+    },
+    "prompts": {
+      "needing": "あなたに今必要なものは何でしょうか?",
+      "happened": "この感情が現れる前に何が起こったのでしょうか?",
+      "speak": "もしこの感情が話せたら、何を言うでしょうか？",
+      "notice": "この感覚は体のどこに感じますか?",
+      "sitOrShift": "これは一緒に座ったり、ゆっくり動かしたりしたいものですか?",
+      "ease": "さらに 10% 楽になる方法は何でしょうか?",
+      "kindness": "今日は自分自身にどんな小さな親切をしてあげられますか？",
+      "supported": "この瞬間にサポートされていると感じるのに役立つものは何ですか?"
+    }
+  }
+}

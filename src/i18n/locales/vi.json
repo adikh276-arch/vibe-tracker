@@ -1,0 +1,38 @@
+{
+  "translation": {
+    "vibeTracker": "Vibe Tracker",
+    "howAreYouFeeling": "Bạn cảm thấy thế nào vào lúc này?",
+    "describeOwnVibe": "Hoặc hãy mô tả phong cách của riêng bạn.",
+    "rightNowIFeel": "Ngay lúc này, tôi cảm thấy…",
+    "saveVibe": "Lưu Vibe",
+    "pauseAndReflect": "Dừng lại và suy ngẫm",
+    "typeThoughts": "Hãy viết suy nghĩ của bạn vào đây…",
+    "submitReflection": "Nộp bài phản hồi",
+    "next": "Kế tiếp",
+    "vibeLogged": "Vibe đã được ghi lại",
+    "thankYou": "Cảm ơn bạn đã dành thời gian và chú ý. Ngay cả một sự quan tâm nhỏ như thế này cũng rất quan trọng.",
+    "done": "Xong",
+    "vibes": {
+      "Calm": "Điềm tĩnh",
+      "Light": "Ánh sáng",
+      "Driven": "Được thúc đẩy",
+      "Content": "Nội dung",
+      "Steady": "Vững chắc",
+      "Tender": "Mềm",
+      "Heavy": "Nặng",
+      "Thoughtful": "Chu đáo",
+      "Restless": "bồn chồn",
+      "Drained": "Đã cạn"
+    },
+    "prompts": {
+      "needing": "Bạn có thể đang cần gì ngay lúc này?",
+      "happened": "Điều gì đã xảy ra trước khi cảm giác này xuất hiện?",
+      "speak": "Nếu cảm xúc này có thể nói, nó sẽ nói gì?",
+      "notice": "Bạn cảm nhận được cảm giác này ở vùng nào trên cơ thể?",
+      "sitOrShift": "Bạn muốn suy ngẫm về điều này hay muốn giải quyết một cách nhẹ nhàng?",
+      "ease": "Điều gì sẽ mang lại cho bạn sự thoải mái hơn 10%?",
+      "kindness": "Hôm nay bạn có thể dành cho bản thân mình điều gì đó tử tế nhỏ nhặt?",
+      "supported": "Điều gì sẽ giúp bạn cảm thấy được hỗ trợ trong thời điểm này?"
+    }
+  }
+}

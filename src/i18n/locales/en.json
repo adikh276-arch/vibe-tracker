@@ -1,0 +1,38 @@
+{
+  "translation": {
+    "vibeTracker": "Vibe Tracker",
+    "howAreYouFeeling": "How are you feeling in this moment?",
+    "describeOwnVibe": "Or describe your own vibe",
+    "rightNowIFeel": "Right now, I feel…",
+    "saveVibe": "Save Vibe",
+    "pauseAndReflect": "Pause & Reflect",
+    "typeThoughts": "Type your thoughts here…",
+    "submitReflection": "Submit Reflection",
+    "next": "Next",
+    "vibeLogged": "Vibe logged",
+    "thankYou": "Thank you for pausing and noticing. Even this small check-in matters.",
+    "done": "Done",
+    "vibes": {
+      "Calm": "Calm",
+      "Light": "Light",
+      "Driven": "Driven",
+      "Content": "Content",
+      "Steady": "Steady",
+      "Tender": "Tender",
+      "Heavy": "Heavy",
+      "Thoughtful": "Thoughtful",
+      "Restless": "Restless",
+      "Drained": "Drained"
+    },
+    "prompts": {
+      "needing": "What might you be needing right now?",
+      "happened": "What happened before this feeling showed up?",
+      "speak": "If this emotion could speak, what would it say?",
+      "notice": "Where do you notice this feeling in your body?",
+      "sitOrShift": "Is this something you want to sit with or shift gently?",
+      "ease": "What would bring you even 10% more ease?",
+      "kindness": "What small kindness could you offer yourself today?",
+      "supported": "What would help you feel supported in this moment?"
+    }
+  }
+}

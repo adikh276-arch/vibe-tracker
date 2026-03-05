@@ -1,0 +1,38 @@
+{
+  "translation": {
+    "vibeTracker": "氛围追踪器",
+    "howAreYouFeeling": "你此刻感觉如何？",
+    "describeOwnVibe": "或者描述一下你自己的风格。",
+    "rightNowIFeel": "此刻，我感觉……",
+    "saveVibe": "保存氛围",
+    "pauseAndReflect": "暂停与反思",
+    "typeThoughts": "请在此处输入您的想法……",
+    "submitReflection": "提交反思",
+    "next": "下一个",
+    "vibeLogged": "Vibe 已记录",
+    "thankYou": "感谢您驻足关注。即使是这样小小的问候也意义非凡。",
+    "done": "完毕",
+    "vibes": {
+      "Calm": "冷静的",
+      "Light": "光",
+      "Driven": "驱动",
+      "Content": "内容",
+      "Steady": "稳定的",
+      "Tender": "投标",
+      "Heavy": "重的",
+      "Thoughtful": "周到",
+      "Restless": "不安",
+      "Drained": "已排干"
+    },
+    "prompts": {
+      "needing": "您现在可能需要什么？",
+      "happened": "这种感觉出现之前发生了什么？",
+      "speak": "如果这种情感会说话，它会说什么？",
+      "notice": "你感觉这种感觉时，身体的哪个部位在感受？",
+      "sitOrShift": "这是你想静静地感受一下，还是轻轻地调整一下？",
+      "ease": "什么能让你轻松10%？",
+      "kindness": "今天你可以对自己做哪些小小的善事？",
+      "supported": "此刻，什么能让你感到被支持？"
+    }
+  }
+}

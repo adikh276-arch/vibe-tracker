@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const vibes = [
   { emoji: "🌷", label: "Calm" },
@@ -18,6 +19,7 @@ interface Props {
 }
 
 const VibeCheckIn = ({ onNext }: Props) => {
+  const { t } = useTranslation();
   const [selected, setSelected] = useState<string | null>(null);
   const [customVibe, setCustomVibe] = useState("");
 
@@ -26,11 +28,11 @@ const VibeCheckIn = ({ onNext }: Props) => {
   return (
     <div className="animate-fade-slide-in flex flex-col min-h-screen px-6 pt-12 pb-28">
       <h1 className="font-display text-3xl font-bold text-center text-foreground tracking-tight">
-        Vibe Tracker
+        {t("vibeTracker")}
       </h1>
 
       <p className="font-heading text-lg text-center text-muted-foreground mt-6 mb-8">
-        How are you feeling in this moment?
+        {t("howAreYouFeeling")}
       </p>
 
       {/* Vibe Grid */}
@@ -45,7 +47,9 @@ const VibeCheckIn = ({ onNext }: Props) => {
             className={`vibe-circle ${selected === vibe.label ? "selected animate-gentle-pulse" : ""}`}
           >
             <span className="text-2xl leading-none">{vibe.emoji}</span>
-            <span className="text-xs mt-1 font-medium text-foreground/80">{vibe.label}</span>
+            <span className="text-xs mt-1 font-medium text-foreground/80">
+              {t(`vibes.${vibe.label}`)}
+            </span>
           </button>
         ))}
       </div>
@@ -53,12 +57,12 @@ const VibeCheckIn = ({ onNext }: Props) => {
       {/* Custom Vibe */}
       <div className="mt-10 max-w-sm mx-auto w-full">
         <p className="font-heading text-sm font-semibold text-muted-foreground mb-3">
-          Or describe your own vibe
+          {t("describeOwnVibe")}
         </p>
         <input
           type="text"
           className="vibe-input"
-          placeholder="Right now, I feel…"
+          placeholder={t("rightNowIFeel")}
           value={customVibe}
           onChange={(e) => {
             setCustomVibe(e.target.value);
@@ -74,7 +78,7 @@ const VibeCheckIn = ({ onNext }: Props) => {
           disabled={!currentVibe}
           onClick={() => onNext(currentVibe)}
         >
-          Save Vibe
+          {t("saveVibe")}
         </button>
       </div>
     </div>
@@ -82,3 +86,4 @@ const VibeCheckIn = ({ onNext }: Props) => {
 };
 
 export default VibeCheckIn;
+

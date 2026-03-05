@@ -1,0 +1,38 @@
+{
+  "translation": {
+    "vibeTracker": "바이브 트래커",
+    "howAreYouFeeling": "지금 기분이 어떠세요?",
+    "describeOwnVibe": "혹은 당신만의 분위기를 묘사해 보세요.",
+    "rightNowIFeel": "지금 제 기분은…",
+    "saveVibe": "세이브 바이브",
+    "pauseAndReflect": "잠시 멈추고 생각해 보세요",
+    "typeThoughts": "여기에 생각을 입력하세요…",
+    "submitReflection": "성찰 제출",
+    "next": "다음",
+    "vibeLogged": "Vibe가 로그인했습니다.",
+    "thankYou": "잠시 멈춰서 관심을 가져주셔서 감사합니다. 이처럼 작은 관심도 소중합니다.",
+    "done": "완료",
+    "vibes": {
+      "Calm": "침착한",
+      "Light": "빛",
+      "Driven": "추진력",
+      "Content": "콘텐츠",
+      "Steady": "꾸준한",
+      "Tender": "부드러운",
+      "Heavy": "무거운",
+      "Thoughtful": "인정 있는",
+      "Restless": "불안한",
+      "Drained": "배수됨"
+    },
+    "prompts": {
+      "needing": "지금 당신에게 필요한 것은 무엇인가요?",
+      "happened": "이 감정이 나타나기 전에 무슨 일이 있었나요?",
+      "speak": "만약 이 감정이 말을 할 수 있다면, 뭐라고 말할까요?",
+      "notice": "이 느낌은 몸의 어느 부위에서 느껴지나요?",
+      "sitOrShift": "이것을 그대로 두고 싶으신가요, 아니면 조심스럽게 옮기고 싶으신가요?",
+      "ease": "당신에게 10%라도 더 편안함을 가져다줄 수 있는 것은 무엇일까요?",
+      "kindness": "오늘 당신은 자신에게 어떤 작은 친절을 베풀 수 있을까요?",
+      "supported": "지금 이 순간 당신이 지지받고 있다고 느끼도록 도와줄 수 있는 것은 무엇일까요?"
+    }
+  }
+}

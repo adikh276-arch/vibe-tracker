@@ -1,0 +1,38 @@
+{
+  "translation": {
+    "vibeTracker": "Titreşim Takip Cihazı",
+    "howAreYouFeeling": "Şu anda nasıl hissediyorsunuz?",
+    "describeOwnVibe": "Ya da kendi tarzınızı tanımlayın.",
+    "rightNowIFeel": "Şu anda kendimi...",
+    "saveVibe": "Vibe&#39;ı Kaydet",
+    "pauseAndReflect": "Durakla ve Düşün",
+    "typeThoughts": "Düşüncelerinizi buraya yazın…",
+    "submitReflection": "Yansımayı Gönder",
+    "next": "Sonraki",
+    "vibeLogged": "Vibe kaydedildi",
+    "thankYou": "Durup fark ettiğiniz için teşekkür ederim. Bu küçük hatırlatma bile önemli.",
+    "done": "Tamamlamak",
+    "vibes": {
+      "Calm": "Sakinlik",
+      "Light": "Işık",
+      "Driven": "Sürücü",
+      "Content": "İçerik",
+      "Steady": "Sabit durmak",
+      "Tender": "Sunmak",
+      "Heavy": "Ağır",
+      "Thoughtful": "Düşünceli",
+      "Restless": "Huzursuz",
+      "Drained": "Boşaltılmış"
+    },
+    "prompts": {
+      "needing": "Şu anda neye ihtiyacınız olabilir?",
+      "happened": "Bu his ortaya çıkmadan önce neler oldu?",
+      "speak": "Eğer bu duygu konuşabilseydi, ne derdi?",
+      "notice": "Bu hissi vücudunuzun neresinde hissediyorsunuz?",
+      "sitOrShift": "Bu durumu olduğu gibi kabullenmek mi yoksa yavaşça değiştirmek mi istiyorsunuz?",
+      "ease": "Size %10 daha fazla rahatlık sağlayacak şey ne olurdu?",
+      "kindness": "Bugün kendinize ne gibi küçük bir iyilik yapabilirsiniz?",
+      "supported": "Bu süreçte kendinizi desteklenmiş hissetmenize ne yardımcı olurdu?"
+    }
+  }
+}

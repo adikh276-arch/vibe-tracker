@@ -1,0 +1,38 @@
+{
+  "translation": {
+    "vibeTracker": "Śledzenie wibracji",
+    "howAreYouFeeling": "Jak się czujesz w tej chwili?",
+    "describeOwnVibe": "Albo opisz swój własny klimat",
+    "rightNowIFeel": "W tej chwili czuję…",
+    "saveVibe": "Zapisz Vibe",
+    "pauseAndReflect": "Zatrzymaj się i zastanów",
+    "typeThoughts": "Wpisz tutaj swoje przemyślenia…",
+    "submitReflection": "Prześlij refleksję",
+    "next": "Następny",
+    "vibeLogged": "Zalogowano wibracje",
+    "thankYou": "Dziękuję, że się zatrzymałeś i zauważyłeś. Nawet ta drobna informacja jest ważna.",
+    "done": "Zrobione",
+    "vibes": {
+      "Calm": "Spokój",
+      "Light": "Światło",
+      "Driven": "Napędzany",
+      "Content": "Treść",
+      "Steady": "Stały",
+      "Tender": "Miękki",
+      "Heavy": "Ciężki",
+      "Thoughtful": "Przemyślany",
+      "Restless": "Niespokojny",
+      "Drained": "Osuszony"
+    },
+    "prompts": {
+      "needing": "Czego możesz potrzebować w tej chwili?",
+      "happened": "Co się wydarzyło zanim pojawiło się to uczucie?",
+      "speak": "Gdyby ta emocja mogła mówić, co by powiedziała?",
+      "notice": "Gdzie w ciele zauważasz to uczucie?",
+      "sitOrShift": "Czy chcesz z tym posiedzieć, czy też delikatnie to zmienić?",
+      "ease": "Co przyniosłoby Ci nawet o 10% więcej spokoju?",
+      "kindness": "Jaką małą przysługę mógłbyś sobie dziś ofiarować?",
+      "supported": "Co pomogłoby Ci poczuć wsparcie w tym momencie?"
+    }
+  }
+}

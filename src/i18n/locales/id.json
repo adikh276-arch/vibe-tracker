@@ -1,0 +1,38 @@
+{
+  "translation": {
+    "vibeTracker": "Pelacak Getaran",
+    "howAreYouFeeling": "Bagaimana perasaanmu saat ini?",
+    "describeOwnVibe": "Atau gambarkan aura Anda sendiri",
+    "rightNowIFeel": "Saat ini, saya merasa…",
+    "saveVibe": "Simpan Getaran",
+    "pauseAndReflect": "Berhenti Sejenak &amp; Merenung",
+    "typeThoughts": "Tuliskan pemikiran Anda di sini…",
+    "submitReflection": "Kirim Refleksi",
+    "next": "Berikutnya",
+    "vibeLogged": "Vibe tercatat",
+    "thankYou": "Terima kasih telah meluangkan waktu dan memperhatikan. Bahkan perhatian kecil ini pun berarti.",
+    "done": "Selesai",
+    "vibes": {
+      "Calm": "Tenang",
+      "Light": "Lampu",
+      "Driven": "Termotivasi",
+      "Content": "Isi",
+      "Steady": "Stabil",
+      "Tender": "Lembut",
+      "Heavy": "Berat",
+      "Thoughtful": "Penuh pertimbangan",
+      "Restless": "Gelisah",
+      "Drained": "Dikeringkan"
+    },
+    "prompts": {
+      "needing": "Apa yang mungkin Anda butuhkan saat ini?",
+      "happened": "Apa yang terjadi sebelum perasaan ini muncul?",
+      "speak": "Jika emosi ini bisa berbicara, apa yang akan dikatakannya?",
+      "notice": "Di bagian tubuh mana Anda merasakan sensasi ini?",
+      "sitOrShift": "Apakah ini sesuatu yang ingin Anda diamkan atau geser perlahan?",
+      "ease": "Apa yang akan memberi Anda kemudahan 10% lebih banyak?",
+      "kindness": "Kebaikan kecil apa yang bisa Anda berikan kepada diri sendiri hari ini?",
+      "supported": "Apa yang akan membantu Anda merasa didukung saat ini?"
+    }
+  }
+}
