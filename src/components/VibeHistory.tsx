@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useMemo, useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { getVibeEntries, VibeEntry } from "@/types/vibe";
 import { ChevronLeft } from "lucide-react";
@@ -22,7 +22,15 @@ const vibeEmojiMap: Record<string, string> = {
 
 const VibeHistory = ({ onBack }: Props) => {
   const { t, i18n } = useTranslation();
-  const entries = useMemo(() => getVibeEntries(), []);
+  const [entries, setEntries] = useState<VibeEntry[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    getVibeEntries().then(res => {
+      setEntries(res);
+      setLoading(false);
+    });
+  }, []);
 
   const formatDate = (dateStr: string) => {
     const date = new Date(dateStr);
@@ -58,6 +66,15 @@ const VibeHistory = ({ onBack }: Props) => {
     });
     return Object.entries(groups).sort((a, b) => new Date(b[0]).getTime() - new Date(a[0]).getTime());
   }, [entries]);
+
+  if (loading) {
+    return (
+      <div className="flex-1 flex flex-col items-center justify-center p-6 text-center">
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary mb-4"></div>
+        <p className="text-muted-foreground text-sm">Rewinding your journey...</p>
+      </div>
+    );
+  }
 
   return (
     <div className="animate-fade-slide-in flex flex-col min-h-screen px-6 pt-8 pb-12">

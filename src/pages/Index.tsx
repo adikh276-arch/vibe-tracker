@@ -26,8 +26,8 @@ const Index = () => {
     transition("reflection");
   };
 
-  const handleReflectionComplete = (reflections: string[]) => {
-    saveVibeEntry({
+  const handleReflectionComplete = async (reflections: string[]) => {
+    await saveVibeEntry({
       id: crypto.randomUUID(),
       vibe: selectedVibe,
       reflections,
