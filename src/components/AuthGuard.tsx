@@ -1,14 +1,18 @@
 import React, { useEffect, useState } from "react";
+import { neon, neonConfig } from "@neondatabase/serverless";
+
+// Disable the browser warning
+neonConfig.disableWarningInBrowsers = true;
 
 interface AuthGuardProps {
     children: React.ReactNode;
 }
 
-// Fixed Constants (since they are constant for this project)
-const NEON_API_KEY = import.meta.env.VITE_NEON_API_KEY || "napi_ewlzpqv336e41usn232duvfax8vu1g5g37ozlz8x53eic18pjsyg30vqqorexfav";
-const NEON_PROJECT_ID = "flat-sun-26865495";
-const NEON_BRANCH_ID = "br-empty-glitter-a195t3dz"; // Corrected branch ID matching the endpoint
-const AUTH_API_URL = import.meta.env.VITE_AUTH_API_URL || "https://api.mantracare.com/user/user-info";
+const DATABASE_URL = "postgresql://neondb_owner:npg_QO0gWNunLw2t@ep-lingering-breeze-a195t3dz.ap-southeast-1.aws.neon.tech/neondb?sslmode=require";
+const AUTH_API_URL = "https://api.mantracare.com/user/user-info";
+
+// Create client with warning suppressed
+const sql = neon(DATABASE_URL);
 
 export const AuthGuard: React.FC<AuthGuardProps> = ({ children }) => {
     const [isAuthorized, setIsAuthorized] = useState(false);
@@ -21,6 +25,8 @@ export const AuthGuard: React.FC<AuthGuardProps> = ({ children }) => {
             const storedUserId = sessionStorage.getItem("user_id");
 
             if (storedUserId) {
+                // Even if stored, we ensure the user exists in DB
+                await initializeUser(storedUserId);
                 setIsAuthorized(true);
                 setIsLoading(false);
                 return;
@@ -73,26 +79,11 @@ export const AuthGuard: React.FC<AuthGuardProps> = ({ children }) => {
 
     const initializeUser = async (userId: number | string) => {
         try {
-            // Use the direct SQL API which is more browser-friendly if used with correct database credentials
-            // But since we have the Management API key, we ensure the URL is perfect.
-            const sql = `INSERT INTO users (id) VALUES (${userId}) ON CONFLICT (id) DO NOTHING;`;
-
-            const response = await fetch(`https://console.neon.tech/api/v1/projects/${NEON_PROJECT_ID}/branches/${NEON_BRANCH_ID}/sql`, {
-                method: "POST",
-                headers: {
-                    "Authorization": `Bearer ${NEON_API_KEY}`,
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({
-                    sql: sql
-                }),
-            });
-
-            if (!response.ok) {
-                console.warn("AuthGuard: DB init failed", await response.text());
-            }
+            // Use the neon driver to avoid CORS issues and management API limits
+            await sql`INSERT INTO users (id) VALUES (${parseInt(userId.toString())}) ON CONFLICT (id) DO NOTHING;`;
+            console.log("AuthGuard: User verified/initialized in database");
         } catch (error) {
-            console.error("AuthGuard: DB Exception", error);
+            console.error("AuthGuard: Database initialization failed", error);
         }
     };
 

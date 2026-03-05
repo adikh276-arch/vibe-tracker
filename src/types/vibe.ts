@@ -1,4 +1,7 @@
-import { neon } from '@neondatabase/serverless';
+import { neon, neonConfig } from '@neondatabase/serverless';
+
+// Disable the browser warning as requested
+neonConfig.disableWarningInBrowsers = true;
 
 export interface VibeEntry {
   id: string;
