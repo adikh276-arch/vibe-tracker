@@ -12,6 +12,11 @@
     "vibeLogged": "Vibe logged",
     "thankYou": "Thank you for pausing and noticing. Even this small check-in matters.",
     "done": "Done",
+    "viewHistory": "View History",
+    "history": "History",
+    "yourJourney": "Your Journey",
+    "noVibes": "No vibes logged yet",
+    "startFirstCheckIn": "Start your first check-in to see your journey unfold here.",
     "vibes": {
       "Calm": "Calm",
       "Light": "Light",

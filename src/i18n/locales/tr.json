@@ -33,6 +33,11 @@
       "ease": "Size %10 daha fazla rahatlık sağlayacak şey ne olurdu?",
       "kindness": "Bugün kendinize ne gibi küçük bir iyilik yapabilirsiniz?",
       "supported": "Bu süreçte kendinizi desteklenmiş hissetmenize ne yardımcı olurdu?"
-    }
+    },
+    "viewHistory": "Geçmişi Görüntüle",
+    "history": "Tarih",
+    "yourJourney": "Yolculuğunuz",
+    "noVibes": "Henüz herhangi bir titreşim kaydedilmedi.",
+    "startFirstCheckIn": "Yolculuğunuzun nasıl geliştiğini görmek için ilk girişinizi buradan yapın."
   }
 }

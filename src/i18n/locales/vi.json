@@ -33,6 +33,11 @@
       "ease": "Điều gì sẽ mang lại cho bạn sự thoải mái hơn 10%?",
       "kindness": "Hôm nay bạn có thể dành cho bản thân mình điều gì đó tử tế nhỏ nhặt?",
       "supported": "Điều gì sẽ giúp bạn cảm thấy được hỗ trợ trong thời điểm này?"
-    }
+    },
+    "viewHistory": "Xem lịch sử",
+    "history": "Lịch sử",
+    "yourJourney": "Hành trình của bạn",
+    "noVibes": "Chưa có tín hiệu nào được ghi nhận.",
+    "startFirstCheckIn": "Bắt đầu lần đăng ký đầu tiên để theo dõi hành trình của bạn tại đây."
   }
 }

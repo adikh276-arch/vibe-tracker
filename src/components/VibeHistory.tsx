@@ -1,4 +1,5 @@
 import { useMemo } from "react";
+import { useTranslation } from "react-i18next";
 import { getVibeEntries, VibeEntry } from "@/types/vibe";
 import { ChevronLeft } from "lucide-react";
 
@@ -19,32 +20,33 @@ const vibeEmojiMap: Record<string, string> = {
   Drained: "💔",
 };
 
-const formatDate = (dateStr: string) => {
-  const date = new Date(dateStr);
-  const today = new Date();
-  const yesterday = new Date();
-  yesterday.setDate(today.getDate() - 1);
-
-  if (date.toDateString() === today.toDateString()) return "Today";
-  if (date.toDateString() === yesterday.toDateString()) return "Yesterday";
-
-  return date.toLocaleDateString("en-US", {
-    weekday: "long",
-    month: "short",
-    day: "numeric",
-  });
-};
-
-const formatTime = (dateStr: string) => {
-  return new Date(dateStr).toLocaleTimeString("en-US", {
-    hour: "numeric",
-    minute: "2-digit",
-    hour12: true,
-  });
-};
-
 const VibeHistory = ({ onBack }: Props) => {
+  const { t, i18n } = useTranslation();
   const entries = useMemo(() => getVibeEntries(), []);
+
+  const formatDate = (dateStr: string) => {
+    const date = new Date(dateStr);
+    const today = new Date();
+    const yesterday = new Date();
+    yesterday.setDate(today.getDate() - 1);
+
+    if (date.toDateString() === today.toDateString()) return t("today", "Today");
+    if (date.toDateString() === yesterday.toDateString()) return t("yesterday", "Yesterday");
+
+    return date.toLocaleDateString(i18n.language, {
+      weekday: "long",
+      month: "short",
+      day: "numeric",
+    });
+  };
+
+  const formatTime = (dateStr: string) => {
+    return new Date(dateStr).toLocaleTimeString(i18n.language, {
+      hour: "numeric",
+      minute: "2-digit",
+      hour12: true,
+    });
+  };
 
   // Group entries by date
   const grouped = useMemo(() => {
@@ -54,7 +56,7 @@ const VibeHistory = ({ onBack }: Props) => {
       if (!groups[key]) groups[key] = [];
       groups[key].push(entry);
     });
-    return Object.entries(groups);
+    return Object.entries(groups).sort((a, b) => new Date(b[0]).getTime() - new Date(a[0]).getTime());
   }, [entries]);
 
   return (
@@ -72,16 +74,18 @@ const VibeHistory = ({ onBack }: Props) => {
           <ChevronLeft className="w-5 h-5 text-foreground" />
         </button>
         <h1 className="font-display text-2xl font-bold text-foreground tracking-tight">
-          Your Journey
+          {t("yourJourney")}
         </h1>
       </div>
 
       {entries.length === 0 ? (
         <div className="flex-1 flex flex-col items-center justify-center text-center">
           <div className="text-5xl mb-4">🌿</div>
-          <p className="font-heading text-lg text-foreground mb-2">No vibes logged yet</p>
+          <p className="font-heading text-lg text-foreground mb-2">
+            {t("noVibes")}
+          </p>
           <p className="text-muted-foreground text-sm max-w-xs">
-            Start your first check-in to see your journey unfold here.
+            {t("startFirstCheckIn")}
           </p>
         </div>
       ) : (
@@ -94,7 +98,7 @@ const VibeHistory = ({ onBack }: Props) => {
               </p>
 
               <div className="space-y-3">
-                {dayEntries.map((entry) => (
+                {dayEntries.sort((a, b) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime()).map((entry) => (
                   <div
                     key={entry.id}
                     className="rounded-3xl p-5 transition-all duration-200"
@@ -111,7 +115,7 @@ const VibeHistory = ({ onBack }: Props) => {
                           {vibeEmojiMap[entry.vibe] || "✨"}
                         </span>
                         <span className="font-heading text-base font-semibold text-foreground">
-                          {entry.vibe}
+                          {t(`vibes.${entry.vibe}`)}
                         </span>
                       </div>
                       <span className="text-xs text-muted-foreground">

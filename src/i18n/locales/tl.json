@@ -33,6 +33,11 @@
       "ease": "Ano ang makapagbibigay sa iyo ng kahit 10% pang dagdag na ginhawa?",
       "kindness": "Anong maliit na kabaitan ang maibibigay mo sa iyong sarili ngayon?",
       "supported": "Ano ang makakatulong sa iyo na makaramdam ng suporta sa sandaling ito?"
-    }
+    },
+    "viewHistory": "Tingnan ang Kasaysayan",
+    "history": "Kasaysayan",
+    "yourJourney": "Ang Iyong Paglalakbay",
+    "noVibes": "Wala pang naka-log na vibes",
+    "startFirstCheckIn": "Simulan ang iyong unang check-in upang makita ang mga pangyayari sa iyong paglalakbay dito."
   }
 }

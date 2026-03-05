@@ -33,6 +33,11 @@
       "ease": "¿Qué te traería incluso un 10% más de facilidad?",
       "kindness": "¿Qué pequeño gesto de bondad podrías ofrecerte hoy?",
       "supported": "¿Qué te ayudaría a sentirte apoyado en este momento?"
-    }
+    },
+    "viewHistory": "Ver historial",
+    "history": "Historia",
+    "yourJourney": "Tu viaje",
+    "noVibes": "Aún no se han registrado vibraciones",
+    "startFirstCheckIn": "Comienza tu primer check-in para ver cómo se desarrolla tu viaje aquí."
   }
 }

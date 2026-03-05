@@ -33,6 +33,11 @@
       "ease": "Apa yang akan memberi Anda kemudahan 10% lebih banyak?",
       "kindness": "Kebaikan kecil apa yang bisa Anda berikan kepada diri sendiri hari ini?",
       "supported": "Apa yang akan membantu Anda merasa didukung saat ini?"
-    }
+    },
+    "viewHistory": "Lihat Riwayat",
+    "history": "Sejarah",
+    "yourJourney": "Perjalanan Anda",
+    "noVibes": "Belum ada getaran yang tercatat.",
+    "startFirstCheckIn": "Mulailah proses check-in pertama Anda untuk melihat perjalanan Anda selanjutnya di sini."
   }
 }

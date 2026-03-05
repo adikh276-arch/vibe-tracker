@@ -33,6 +33,11 @@
       "ease": "Co przyniosłoby Ci nawet o 10% więcej spokoju?",
       "kindness": "Jaką małą przysługę mógłbyś sobie dziś ofiarować?",
       "supported": "Co pomogłoby Ci poczuć wsparcie w tym momencie?"
-    }
+    },
+    "viewHistory": "Wyświetl historię",
+    "history": "Historia",
+    "yourJourney": "Twoja podróż",
+    "noVibes": "Nie zarejestrowano jeszcze żadnych wibracji",
+    "startFirstCheckIn": "Rozpocznij pierwszą odprawę, aby zobaczyć, jak rozwija się Twoja podróż."
   }
 }
